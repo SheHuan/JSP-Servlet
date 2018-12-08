@@ -41,4 +41,27 @@
         <url-pattern>/configTest1</url-pattern>
     </servlet-mapping>
 
+    <filter>
+        <filter-name>log</filter-name>
+        <filter-class>com.servlet.demo.filter.LogFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>log</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <jsp-config>
+        <jsp-property-group>
+            <!--指定该配置作用的jsp文件-->
+            <url-pattern>/jsp2/test1.jsp</url-pattern>
+            <page-encoding>utf-8</page-encoding>
+            <!--不允许使用java脚本-->
+            <scripting-invalid>true</scripting-invalid>
+            <!--隐式导入页面头-->
+            <include-prelude>/jsp2/top.jsp</include-prelude>
+            <!--隐式导入页面尾-->
+            <include-coda>/jsp2/bottom.jsp</include-coda>
+        </jsp-property-group>
+    </jsp-config>
+
 </web-app>

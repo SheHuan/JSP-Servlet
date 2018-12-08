@@ -75,4 +75,17 @@
         <dynamic-attributes>true</dynamic-attributes>
     </tag>
 
+    <!--表达式语言自定义函数-->
+    <function>
+        <name>reverse</name>
+        <function-class>com.servlet.demo.Functions</function-class>
+        <function-signature>java.lang.String reverse(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>charCount</name>
+        <function-class>com.servlet.demo.Functions</function-class>
+        <function-signature>int charCount(java.lang.String)</function-signature>
+    </function>
+
 </taglib>

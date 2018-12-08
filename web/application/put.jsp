@@ -16,6 +16,9 @@
 %>
 <%
     application.setAttribute("count", ++i);
+    application.setAttribute("type", "6666");
+    application.setAttribute("type", "8888");
+    application.removeAttribute("type");
 %>
 <%=i%>
 </body>
